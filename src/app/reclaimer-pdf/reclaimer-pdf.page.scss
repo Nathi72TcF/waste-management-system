@@ -1,0 +1,319 @@
+
+.header {
+    --background: #C5A60A !important;
+    display: flex;
+  }
+
+
+
+.Cancel {
+    color: rgb(255, 255, 255);
+    margin-left: 95%;
+    font-size: 150%;
+}
+
+.PDF {
+    // margin-right: 95%;
+    background: rgb(255, 255, 255);
+    color: #265902;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.Buttons {
+    // border: solid 2px purple;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.CancelBtn {
+    // border: solid 2px rgb(19, 4, 19);
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.PDFButton {
+    // border: solid 2px rgb(179, 255, 0);
+    height: 15%;
+    width: 50%;
+}
+
+
+
+.the-pdf{
+    // border: solid 2px purple;
+    height: 120%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+#the-pdf-page{
+    width: 80%;
+    height: 135vh;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+#pdf-header{
+    height: 30%;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction:row;
+}
+
+#first-section{
+    height: 100%;
+    width: 80%;
+    // background: rgb(150, 10, 33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-section > h1{
+    font-size:3vw;
+    font-family: 'Montserrat', ;
+    color: white;
+}
+#first-section > p{
+    font-size: 1em;
+    font-family: 'Montserrat', ;
+    color: white;
+}
+
+#second-setion{
+    height: 100%;
+    width: 20%;
+    // background: pink;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+#the-image-div{
+    height: 147px;
+    width: 120px;
+    background: white;
+}
+
+
+#info-one{
+    // border: solid 2px yellow;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    flex-direction: row;
+}
+.the-icon{
+  height: 10%;
+  width: 40%;
+//   border: solid 2px black;
+}
+.the-name{
+    height: 10%;
+    width: 40%;
+    // border:solid 2px black;
+}
+
+
+#info-two{
+    border: solid 2px green;
+    height: 100%;
+    width: 50%;
+}
+
+.pdf-table{
+    height: 40%;
+    width: 100%;
+    border: solid 2px red;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    justify-content: center;
+}
+
+#the-table-header{
+    // background-color: yellow;
+    border: solid 1px black;
+    width: 85%;
+    height: 15%;
+    margin-top: 50px;
+    text-align: center;
+    // margin: 0 auto;
+}
+
+#receipt-table{
+    // border: 2px solid red;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-family: 'Montserrat', ;
+    tr > td{
+    }
+    tr > td:nth-child(1){
+        text-align: left;
+        display: flex;
+    }
+    tr > td:nth-child(2){
+        text-align: right;
+    }
+}
+
+
+
+.pdf-table2{
+    border: solid 2px red;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+#the-table-content{
+    // background-color: yellow;
+    border: solid 1px black;
+    width: 85%;
+    height: 15%;
+    margin-top: 50px;
+    text-align: center;
+    // margin: 0 auto;
+}
+
+
+.the-table{
+    height: 49%;
+    width: 100%;
+    // border: solid 2px red;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ion-grid{
+    width: 80%;
+    // border: solid 3px black;
+}
+#header-row{
+    border: solid 1px black;
+}
+#header-col{
+    border: solid 1px black;
+}
+h3{
+    // font-size: 1vw;
+    font-family: 'Montserrat', ;
+}
+#content-col{
+    border: white solid 1px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(226, 226, 226);    
+}
+.foooter{
+    // border: solid 2px red;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+#section-one{
+    // border: solid 2px purple;
+    height: 100%;
+    width: 50%;
+}
+#section-two{
+    // border: solid 2px purple;
+    height: 100%;
+    width: 50%;
+}
+
+.deliver{
+    // font-size: 1.2vw;
+    font-family: 'Montserrat', ;
+}
+.deliver > h5{    
+//  font-size: 1.2vw;
+ font-family: 'Montserrat', ;
+}
+
+#info{
+    // border: solid 2px pink;
+    height: 2%;
+    width: 100%;
+}
+
+#info > p{
+    padding-bottom: 10px;
+    font-family: 'Montserrat', ;
+    color: rgb(99, 99, 99);
+}
+
+.driver{
+    font-size: 1.2vw;
+    font-family: 'Montserrat', ;
+}
+.driver > h5 {
+    font-size: 1.2vw;
+    font-family: 'Montserrat', ;       
+    text-align: right;
+}
+
+
+#info2{
+    // border: solid 2px pink;
+    height: 2%;
+    width: 100%;
+
+    p{
+        padding-bottom: 10px;
+        font-family: 'Montserrat', ;
+        color: rgb(99, 99, 99);
+        text-align: right;
+    }
+}
+
+
+
+
+
+// Media Queries
+
+@media screen and (max-width:1024px){
+
+    #second-setion{
+        height: 100%;
+        width: 20%;
+        // background: pink;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        margin-right: 59px;
+    }
+    
+    #the-image-div{
+        height: 147px;
+        width: 120px;
+        background: white;
+        border: solid 2px;
+    }
+
+    
+#the-pdf-page{
+    width: 80%;
+    height: 112vh;
+    border: solid 1px rgb(0, 0, 0);
+}
+}

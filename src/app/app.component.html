@@ -1,0 +1,58 @@
+
+<ion-app   >
+  <ion-split-pane  contentId="main-content"   >
+    <ion-menu  contentId="main-content" type="overlay"  >
+      <ion-header   >
+      <div class="profile" *ngFor="let user of Newadmin" (onSignIn)="getAuth()" >
+      <div class="profilepic" ><img  *ngIf="user.image" [routerLink]="['/profile2']" src="{{user.image}}" class="profilepic">
+        <img *ngIf="!user.image" src="../../assets/mthombologo (1).png" alt="" class="profilepic"> 
+      </div>
+      <h4 id="names">{{ user.name }} </h4>
+      <!-- <p id="position">Developer</p> -->
+      <!-- <h4 *ngFor="let myusers of users" >{{ myusers.positions }} </h4> -->
+      <p></p>
+      <div id="border"></div>
+      </div>
+      </ion-header>
+      <ion-content id="sidemenu">
+        <ion-list no-lines style="margin: 0 !important;height: 100%;background: rgba(0, 0, 0, 0.801);" >
+        <ion-menu-toggle  no-lines   auto-hide="false" *ngFor="let p of appPages; let i = index"  (click)="activate(i)" >
+            <ion-item no-lines [routerDirection]="'root'" [ngClass]="{'active':active==i}" [routerLink]="[p.url]" [routerLinkActive]="['active']">
+              <ion-icon style="color: white;" slot="start" width="20px" src="../assets/{{p.icon}}.svg"></ion-icon>
+              
+              <!-- <ion-label *ngIf="p.url==='/outbound-driver-info'">
+                {{p.title}}
+              </ion-label> -->
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+
+          </ion-menu-toggle>
+          <ion-item id="signout"  (click)="Logout()">
+            <ion-icon style="color: white;" slot="start" name="log-out" width="20px" ></ion-icon>
+              
+            <ion-label >
+              Logout
+            </ion-label></ion-item>
+              <div class="version">
+              <!-- <button (click)="Logout()">logout</button> -->
+<div class="logos">
+  <img src="../assets/logo.svg" /> <h3>Mthombowolwazi</h3>
+</div>
+<div class="terms">
+  <p class="small">V 001</p>
+  <p id="medium">Terms and Conditions</p>
+  <p id="smalest" class="small">For mobile experiences, Cards make it easy to display the same
+     information visually across many different screen sizes</p>
+</div>
+        </div>
+        </ion-list>
+    
+      
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+  </ion-app>
+

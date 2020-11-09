@@ -1,0 +1,162 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-title>
+      <div class="Buttons">
+        <div class="PDFButton">
+          <ion-button (click)="downloadPdf()" color="clear" class="PDF">Download PDF</ion-button>
+        </div>
+        <div class="CancelBtn">
+          <ion-icon (click)="myBackButton()" class="Cancel" name="close-circle"></ion-icon>
+        </div>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+​
+<ion-content>
+  <div class="the-pdf">
+    <div id="the-pdf-page">
+      <div id="pdf-header">
+        <div id="first-section">
+          <h1>MTHOMBOWOLWAZI</h1>
+          <P>INBOUND WASTE RECYCLING</P>
+        </div>
+        <div id="second-setion">
+          <div id="the-image-div">
+            <img src="../../assets/mthombologo (1).png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="pdf-details">
+        <div id="info-one">
+          <!-- <ion-grid>
+            <ion-row>
+              <ion-col id="for-icon">
+                sdsd
+              </ion-col>
+              <ion-col>
+                sdsd
+              </ion-col>
+            </ion-row>
+          </ion-grid> -->
+
+          <table id="receipt-table">
+            <!-- <tr>
+              <td>
+                <div>
+                  <ion-icon name="person"></ion-icon>
+                </div>
+                <div> Lebogang Thipenyane </div>
+              </td>
+              <td>Transtion Code.</td>
+            </tr> -->
+            <tr>
+              <td>
+                <div>
+                  <ion-icon ></ion-icon>
+                </div>
+                <div>
+                  Transtion Code.
+                </div>
+              </td>
+              <td>{{code}}</td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <ion-icon ></ion-icon>
+                </div>
+                <div>
+                  Overall Mass
+                </div>
+              </td>
+              <td>{{overallMass}}</td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <ion-icon ></ion-icon>
+                </div>
+                <div>
+                  Date Issued
+                </div>
+              </td>
+              <td>{{timez}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="the-table">
+       <ion-grid>
+         <ion-row id="header-row">
+           <ion-col id="header-col"><h3>MATERIAL CODE</h3></ion-col>
+           <ion-col id="header-col"><h3>MASS (KG)</h3></ion-col>
+         </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>GH001</p></ion-col>
+          <ion-col id="content-col"><p>{{GH001storagemassz}}</p></ion-col>
+         </ion-row>
+         <ion-row>
+            <ion-col id="content-col"><p>NFAL01</p></ion-col>
+            <ion-col id="content-col"><p>{{NFAL01storagemassz}}</p></ion-col>
+         </ion-row>
+         <ion-row>
+           <ion-col id="content-col"><p>PAP005</p></ion-col>
+           <ion-col id="content-col"><p>{{PAP005storagemassz}}</p></ion-col>
+         </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PAP007</p></ion-col>
+          <ion-col id="content-col"><p>{{PAP007storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PAP001</p></ion-col>
+          <ion-col id="content-col"><p>{{PAP001storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PAP003</p></ion-col>
+          <ion-col id="content-col"><p>{{PAP003storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>HD001</p></ion-col>
+          <ion-col id="content-col"><p>{{HD001storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>LD001</p></ion-col>
+          <ion-col id="content-col"><p>{{LD001storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>LD003</p></ion-col>
+          <ion-col id="content-col"><p>{{LD003storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PET001</p></ion-col>
+          <ion-col id="content-col"><p>{{PET001storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PET003</p></ion-col>
+          <ion-col id="content-col"><p>{{PET003storagemassz}}</p></ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col id="content-col"><p>PET005</p></ion-col>
+          <ion-col id="content-col"><p>{{PET005storagemassz}}</p></ion-col>
+        </ion-row>
+       </ion-grid>
+      <!-- <div class="foooter">
+        <div id="section-one">
+          <div class="deliver"><h5>Deliver To</h5></div>
+          <div id="info"><p>Nompumelelo Mbatha</p></div>
+          <div id="info"><p>Coca-Cola</p></div>
+          <div id="info"><p>Coca-Cola@gmail.com</p></div>
+        </div>
+        <div id="section-two">
+          <div class="driver"><h5>Driver</h5></div>
+          <div id="info2"><p>Nathi Mbatha</p></div>
+          <div id="info2"><p>075 025 6555</p></div>
+          <div id="info2"><p>5855G GP</p></div>
+        </div>
+      </div> -->
+      </div>
+    </div>
+  </div>
+</ion-content>

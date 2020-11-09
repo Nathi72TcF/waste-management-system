@@ -1,0 +1,58 @@
+
+ 
+  <!-- new code -->
+  
+<ion-content>
+
+  <div class="container">
+    <div class="leftwave">
+      <!-- <img id="wave" src="../../assets/loginwave.svg"> -->
+</div>
+    <img id="grocery" src="../../assets/grocery.svg">
+
+    <form ng-submit="loginForm()" [formGroup]="loginForm" class="login" #form="ngForm">
+            
+    
+      <div class="left">
+        <div class="logo">
+          <img src="../../assets/logo.svg"><span><h3>Mthombowolwazi</h3></span>
+        </div>
+        <div class="middle">
+          <P>Welcome back, Please login to your account</P>
+        
+            <ion-input placeholder="Enter email"  formControlName="email" [class.invalid]="!loginForm.controls['email'].valid &&
+            loginForm.controls['email'].touched" ></ion-input>
+            <div class="error" *ngIf="!loginForm.controls['email'].valid &&
+            loginForm.controls['email'].touched">
+        <div class="messages">
+       <p class="errors">Please enter a valid email address.</p> 
+        </div>
+      </div>
+
+            <ion-input placeholder="Enter password" formControlName="password" type='password'
+            [class.invalid]="!loginForm.controls['password'].valid&& loginForm.controls['password'].touched" ></ion-input>
+           
+             <div *ngIf="!loginForm.controls['password'].valid
+            && loginForm.controls['password'].touched" class="error">
+            <div class="messages">
+            <p class="errors">Your password is incorrect.</p>
+            </div>
+            </div>
+            <p id="password" (click)="resetepassword()">Forgot Password</p>
+            <!-- <button fill="clear" (click)="presentModal()" ion-button>Forgot Password</button> -->
+
+          
+            <button (click)="loginUser(loginForm)" ion-button>Login</button>
+        
+        </div>
+      </div>
+ 
+
+      <div class="right">
+ 
+      </div>
+ 
+  </form>
+</div>
+
+  </ion-content>
